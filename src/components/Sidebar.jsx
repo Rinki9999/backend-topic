@@ -50,4 +50,5 @@ const Sidebar = ({ backendTopics, currentTopicId, handleTopicClick }) => {
   );
 };
 
+
 export default Sidebar;

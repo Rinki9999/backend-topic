@@ -124,9 +124,11 @@ const App = () => {
             <h2 className="text-3xl font-bold text-indigo-400 mb-4">
               {currentTopicId}
             </h2>
-            <pre className="whitespace-pre-wrap text-gray-300 bg-gray-800 p-4 rounded-lg border border-gray-700">
-              {topicContent}
-            </pre>
+            <div
+  className="prose prose-indigo max-w-full bg-gray-100 p-4 rounded-lg border border-gray-700"
+  dangerouslySetInnerHTML={{ __html: topicContent }}
+/>
+
           </>
         ) : (
           <p className="text-gray-500 text-lg">Select a topic to explore ✨</p>
