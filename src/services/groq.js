@@ -44,7 +44,7 @@ RULES:
 `;
 
     // 🔥 CALL YOUR BACKEND INSTEAD OF GROQ DIRECTLY
-    const res = await fetch("http://localhost:5000/api/groq", {
+    const res = await fetch("https://road-map-bakend.vercel.app/api/groq", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ topic, prompt }),
