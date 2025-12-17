@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
-import { fetchTopicData } from "./services/gemini";
+import { fetchTopicData } from "./services/groq";
 
 // ✅ Updated backend topics with subtopics
 const backendTopics = [
